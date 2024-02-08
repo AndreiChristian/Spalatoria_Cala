@@ -1,3 +1,4 @@
+import Heading from '@/components/Heading';
 import React from 'react';
 
 // Define pricing options
@@ -30,7 +31,8 @@ const pricingOptions = [
 
 export default function PricingSection() {
   return (
-    <section aria-labelledby="pricing-two" id="pricing-two" className="bg-white">
+    <section aria-labelledby="pricing-two" id="pricing-two" className="">
+      <Heading />
       <div className="relative items-center w-full px-8 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="mx-auto space-y-4 lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0">
           {pricingOptions.map((option, index) => (

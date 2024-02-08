@@ -1,18 +1,20 @@
 "use client";
 
 import React, { useState } from 'react';
+import { useThemeStore } from '../theme/store';
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const toggle = useThemeStore(state => state.toggleTheme)
 
   // Function to close the drawer
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
-    <div className="w-full mx-auto bg-white border-b">
-      <div className="relative flex flex-col w-full p-2 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div className="bg-white dark:bg-black w-full max-w-full border-b box-border">
+      <div className="relative flex flex-col w-full p-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between lg:justify-start">
-          <a className="text-lg tracking-tight text-black uppercase focus:outline-none focus:ring lg:text-2xl" href="/">
+          <a className="text-lg tracking-tight text-black dark:text-sky-50 uppercase focus:outline-none focus:ring lg:text-2xl" href="/">
             <span className="lg:text-lg uppercase focus:ring-0">
               Spalatoria Cala
             </span>
@@ -49,6 +51,7 @@ const Navbar = () => {
           <a href="/preturi" className="px-2 py-2 text-md text-gray-500 hover:text-blue-500">Preturi</a>
           <a href="/despre_noi" className="px-2 py-2 text-md text-gray-500 hover:text-blue-500">Despre noi</a>
           <a href="/faq" className="px-2 py-2 text-md text-gray-500 hover:text-blue-500">Intrebari frecvente</a>
+          <button className='text-red-500' onClick={toggle} >Toggle</button>
         </nav>
       </div>
     </div>

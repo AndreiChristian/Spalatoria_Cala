@@ -33,7 +33,7 @@ export default function Page() {
           {faqs.map((faq, index) => (
             <li key={index}>
               <div>
-                <p className="mt-5 text-lg font-medium leading-6 text-black">
+                <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-white ">
                   {faq.question}
                 </p>
               </div>

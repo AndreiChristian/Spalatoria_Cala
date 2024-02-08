@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen `}>
+      <body className={`${inter.className} flex flex-col min-h-screen max-w-full `}>
         <ThemeWrapper>
           <Navbar />
-          <main className="flex-grow" >
+          <main className="flex-grow bg-white dark:bg-black " >
             {children}
           </main>
           <Footer />

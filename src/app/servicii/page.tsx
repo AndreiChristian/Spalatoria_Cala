@@ -1,3 +1,4 @@
+import Heading from '@/components/Heading';
 import React from 'react';
 
 const features = [
@@ -14,21 +15,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-white">
+    <section className="">
       <div className="relative items-center w-full px-5 pt-10 mx-auto md:px-12 lg:px-16 lg:pt-24 max-w-7xl lg:py-24">
-        <div>
-          <div className="max-w-2xl">
-            <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-              I am a slightly longer heading that the others and I am aligned to the
-              left
-            </p>
-            <p className="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
-              We all make mistakes, have struggles, and even regret things in our
-              past. But you are not your mistakes, you are not your struggles, and
-              you are here NOW with the power to shape your day and your future.
-            </p>
-          </div>
-        </div>
+        <Heading />
         <div>
           <div className="max-w-xl py-12 mx-auto text-left lg:max-w-7xl">
             <h2 className="sr-only">Features.</h2>

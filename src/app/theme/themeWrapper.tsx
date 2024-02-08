@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import { useThemeStore } from "./store";
 
 export default function ThemeWrapper({ children }: { children: ReactNode }) {
