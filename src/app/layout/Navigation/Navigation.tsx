@@ -29,7 +29,7 @@ const Navbar = () => {
             flex items-center
             " href="/">
             <Image className='hidden md:block ' src={'/images/cala.png'} alt='Cala' width={100} height={100} />
-            <span className={` ${sacramento.className} text-lg lg:text-4xl`}>
+            <span className={` ${sacramento.className} text-2xl lg:text-5xl`}>
               Spalatoria Cala
             </span>
           </Link>
@@ -46,9 +46,9 @@ const Navbar = () => {
         {/* Drawer style navigation */}
         <div className={`opacity-100 fixed top-0 left-0 z-50 w-64 h-full transform bg-white p-5 transition-transform duration-500 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
           <nav className="flex flex-col">
-            <Link className='self-center mb-5' href={'/'}>
+            <Link className='self-center mb-5 flex flex-col items-center ' href={'/'}>
               <Image src={'/images/cala.png'} alt='Cala' width={100} height={100} />
-              <span className={` ${sacramento.className} text-xl lg:text-3xl`}>
+              <span className={` ${sacramento.className} text-3xl lg:text-3xl`}>
                 Spalatoria Cala
               </span>
             </Link>
