@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import ThemeWrapper from "./theme/themeWrapper";
 import Footer from "./layout/Footer";
 import Navbar from "./layout/Navigation/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen max-w-full `}>
+      <body className={`${lora.className} flex flex-col min-h-screen max-w-full `}>
         <ThemeWrapper>
           <Navbar />
           <main className="flex-grow bg-white dark:bg-black " >
