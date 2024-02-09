@@ -43,6 +43,7 @@ const Navbar = () => {
         {/* Drawer style navigation */}
         <div className={`fixed top-0 left-0 z-50 w-64 h-full transform bg-white p-5 transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
           <nav className="flex flex-col">
+            <Image className='self-center border-b' src={'/images/cala.png'} alt='Cala' width={100} height={100} />
             <a href="/servicii" className="py-2 text-sm text-gray-500 hover:text-blue-500">Servicii</a>
             <a href="/galerie" className="py-2 text-sm text-gray-500 hover:text-blue-500">Galerie</a>
             <a href="/preturi" className="py-2 text-sm text-gray-500 hover:text-blue-500">Preturi</a>
