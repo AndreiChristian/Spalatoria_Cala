@@ -2,26 +2,31 @@
 
 import { useThemeStore } from '@/app/theme/store';
 import { MoonIcon, SunIcon } from '@heroicons/react/16/solid';
+import { Sacramento } from 'next/font/google';
 import Image from 'next/image';
 import React, { useState } from 'react';
+
+const sacramento = Sacramento({
+  weight: "400",
+  subsets: ["latin"]
+})
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { darkTheme, toggleTheme } = useThemeStore(state => state)
 
-  // Function to close the drawer
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
     <div className="bg-white dark:bg-black w-full max-w-full border-b box-border">
-      <div className="relative flex flex-col w-full p-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div className="relative flex flex-col w-full px-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between lg:justify-start">
           <a className="
-            text-lg tracking-tight text-black dark:text-sky-50 uppercase focus:outline-none focus:ring lg:text-2xl
-            flex items-center gap-2
+            text-lg tracking-tight text-black dark:text-sky-50 focus:outline-none focus:ring lg:text-2xl
+            flex items-center
             " href="/">
-            <Image src={'/images/cala.png'} alt='Cala' width={70} height={70} />
-            <span className="lg:text-lg uppercase focus:ring-0">
+            <Image className='hidden md:block ' src={'/images/cala.png'} alt='Cala' width={100} height={100} />
+            <span className={` ${sacramento.className} lg:text-3xl`}>
               Spalatoria Cala
             </span>
           </a>
