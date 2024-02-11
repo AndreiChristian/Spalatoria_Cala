@@ -20,10 +20,10 @@ export default function PartnerLogos() {
             <div className="max-w-xl lg:p-10">
               <div>
                 <p className="text-4xl text-black">
-                  I am a heading to describe your customers journey
+                  Parteneri de incredere
                 </p>
                 <p className="max-w-xl mt-4 text-lg tracking-tight text-gray-600">
-                  Whether you're a beginner or an experienced programmer, our SaaS product offers the tools you need to be successful.
+                  Dovada a profesionalismului si serviciilor de calitate sunt partenerii nostri care ne aleg
                 </p>
               </div>
             </div>

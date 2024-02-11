@@ -1,23 +1,28 @@
 import Heading from '@/components/Heading';
+import Image from 'next/image';
 import React from 'react';
 
+
 const features = [
-  { title: "Database with GraphQL", description: "Define the data model in your database and query data with GraphQL." },
-  { title: "Real-time Sync", description: "Sync data across multiple clients." },
-  { title: "Permissions", description: "Define complex security policies to keep your users’ data safe." },
-  { title: "File Storage", description: "Upload and manage files." },
-  { title: "Image Transformations", description: "Resize and optimise images on the fly." },
-  { title: "Authentication", description: "User accounts and social login." },
-  { title: "Serverless Functions", description: "Custom backend code with logs and error handling." },
-  { title: "Payments", description: "Stripe integration for all apps." },
-  { title: "Transactional Emails", description: "Design your email templates and engage your users." },
+  { title: "Cicluri de Spălare Eco-friendly", description: "Consum optimizat de apă și energie pentru o curățenie verde." },
+  { title: "Opțiuni de Curățare Personalizabile", description: "Personalizează-ți spălarea cu setări pentru țesături delicate până la pete rezistente." },
+  { title: "Manipulare Sigură a Articolelor", description: "Sistem avansat de etichetare și urmărire pentru a asigura că fiecare șosetă își găsește proprietarul." },
+  { title: "Ridicare și Livrare la Cerere", description: "Programare convenabilă pentru ridicarea și livrarea rufelor." },
+  { title: "Expertiză În Îndepărtarea Petelor", description: "Tratament specializat pentru petele cele mai dificile." },
+  { title: "Servicii de Spălare în Volum Mare", description: "Manipulare eficientă a volumelor mari pentru afaceri și instituții." },
+  { title: "Consultanță Îngrijire Țesături", description: "Sfaturi de expert pentru menținerea calității textilelor tale." },
+  { title: "Programare Flexibilă", description: "Oferim programări flexibile pentru a se potrivi nevoilor afacerii tale, asigurându-ne că serviciile noastre sunt disponibile exact când ai nevoie de ele." },
+  { title: "Sistem de Feedback", description: "Sistem integrat de feedback pentru a ne asigura că serviciile noastre îndeplinesc constant așteptările clienților și pentru a ne îmbunătăți continuu oferta." },
+  { title: "Parteneriate Sustenabile", description: "Colaborăm cu furnizori și parteneri care împărtășesc angajamentul nostru pentru sustenabilitate, asigurându-ne că toate produsele și procesele noastre sunt prietenoase cu mediul." },
 ];
 
 const FeaturesSection = () => {
   return (
     <section className="">
+      <Heading
+        title='Excelenta si profesionalism'
+      />
       <div className="relative items-center w-full px-5 pt-10 mx-auto md:px-12 lg:px-16 lg:pt-24 max-w-7xl lg:py-24">
-        <Heading />
         <div>
           <div className="max-w-xl py-12 mx-auto text-left lg:max-w-7xl">
             <h2 className="sr-only">Features.</h2>
@@ -27,7 +32,7 @@ const FeaturesSection = () => {
                   <div key={index}>
                     <div>
                       <div className="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl">
-                        ❖
+                        <Image src="/images/cala.png" alt='cala' width={50} height={50} />
                       </div>
                       <p className="mt-4 text-lg font-medium leading-6 text-black">
                         {feature.title}

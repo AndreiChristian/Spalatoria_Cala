@@ -1,16 +1,9 @@
+import Link from "next/link";
+
 const features = [
-  {
-    title: "Developer experience",
-    description: "Plus, our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead.",
-  },
-  {
-    title: "Designers go-to app",
-    description: "Plus, our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead.",
-  },
-  {
-    title: "Easy onboarding",
-    description: "Plus, our platform is constantly evolving to meet the changing needs of the tech industry, ensuring you'll always be ahead.",
-  },
+  { title: "Cicluri de Spălare Eco-friendly", description: "Consum optimizat de apă și energie pentru o curățenie verde." },
+  { title: "Opțiuni de Curățare Personalizabile", description: "Personalizează-ți spălarea cu setări pentru țesături delicate până la pete rezistente." },
+  { title: "Manipulare Sigură a Articolelor", description: "Sistem avansat de etichetare și urmărire pentru a asigura că fiecare șosetă își găsește proprietarul." },
 ];
 
 const Hero = () => {
@@ -23,19 +16,19 @@ const Hero = () => {
               <div className="max-w-xl text-center lg:text-left">
                 <div>
                   <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-                    I am a short heading
+                    Spalatoria Cala
                   </p>
                   <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
-                    Use this paragraph to share information about your company or products. Make it engaging and interesting, and showcase your brand's personality. Thanks for visiting our website!
+                    Spalatorie industriala de materiale textile, echipata cu technologie de ultima ora
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-                  <a href="#_" className="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
-                    Button
-                  </a>
-                  <a href="#_" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
-                    Learn more &nbsp; →
-                  </a>
+                  <Link href="/despre_noi" className="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                    Contact
+                  </Link>
+                  <Link href="/preturi" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
+                    Preturi &nbsp; →
+                  </Link>
                 </div>
               </div>
             </div>
