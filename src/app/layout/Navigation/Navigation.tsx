@@ -1,7 +1,6 @@
 "use client";
 
 import { useThemeStore } from '@/app/theme/store';
-import { MoonIcon, SunIcon } from '@heroicons/react/16/solid';
 import { Sacramento } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -56,7 +55,7 @@ const Navbar = () => {
             <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/servicii' text='Servicii' />
             <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/galerie' text='Galerie' />
             <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/preturi' text='Preturi' />
-            <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/despre_noi' text='Despre noi' />
+            <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/contact' text='Contact' />
             <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/faq' text='Intrebari frecvente' />
           </nav>
         </div>
@@ -70,7 +69,7 @@ const Navbar = () => {
           <DesktopLink href='/servicii' text='Servicii' />
           <DesktopLink href='/galerie' text='Galerie' />
           <DesktopLink href='/preturi' text='Preturi' />
-          <DesktopLink href='/despre_noi' text='Despre noi' />
+          <DesktopLink href='/contact' text='Contact' />
           <DesktopLink href='/faq' text='Intrebari frecvente' />
         </nav>
       </div>

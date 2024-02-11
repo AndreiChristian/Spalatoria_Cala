@@ -21,6 +21,9 @@ const FeaturesSection = () => {
     <section className="">
       <Heading
         title='Excelenta si profesionalism'
+        paragraph='
+        La spălătoria noastră industrială de textile, ne angajăm să oferim servicii de înaltă calitate pentru toate nevoile dvs. de curățare. Utilizăm tehnologie avansată și procese eficiente pentru a asigura că fiecare articol este tratat cu cea mai mare atenție și profesionalism. Serviciile noastre includ spălarea, uscarea și călcarea textilelor industriale, cum ar fi uniforme, lenjerie de pat și prosoape, garantând îndepărtarea eficientă a petelor și o curățenie impecabilă. Ne mândrim cu promptitudinea livrării și cu capacitatea de a răspunde flexibil la cerințele specifice ale clienților noștri, oferind soluții personalizate pentru fiecare proiect. Obiectivul nostru principal este să vă asigurăm că textilele dvs. sunt întotdeauna în condiții perfecte, contribuind astfel la imaginea și succesul afacerii dvs.
+        '
       />
       <div className="relative items-center w-full px-5 pt-10 mx-auto md:px-12 lg:px-16 lg:pt-24 max-w-7xl lg:py-24">
         <div>
