@@ -1,4 +1,5 @@
 import Heading from "@/components/Heading";
+import Question from "./Question";
 
 export default function Page() {
 
@@ -28,7 +29,7 @@ export default function Page() {
       answer: "În cazul nefericit al unei pierderi sau deteriorări, avem politici clare de compensare. Vă rugăm să ne contactați imediat pentru a rezolva orice problemă într-un mod satisfăcător."
     },
     {
-      question: "Există programe de loialitate pentru clienții regulari?",
+      question: "Există programe de loialitate pentru clienții fideli?",
       answer: "Da, avem programe de loialitate care recompensează clienții regulari cu reduceri și oferte speciale. Pentru mai multe detalii, vă invităm să ne contactați."
     }
   ];
@@ -41,16 +42,7 @@ export default function Page() {
       <div className="items-center w-full max-w-3xl px-5 py-5 mx-auto md:px-12 lg:px-16 lg:py-20">
         <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:gap-12">
           {faqs.map((faq, index) => (
-            <li key={index}>
-              <div>
-                <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-white ">
-                  {faq.question}
-                </p>
-              </div>
-              <div className="mt-2 text-base text-gray-500">
-                {faq.answer}
-              </div>
-            </li>
+            <Question key={index} faq={faq} />
           ))}
         </ul>
       </div>

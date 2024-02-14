@@ -1,4 +1,3 @@
-
 interface HeadingProps {
   title?: string,
   paragraph?: string

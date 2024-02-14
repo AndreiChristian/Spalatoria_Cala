@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroFeatures from "./HeroFeatures";
 
 const features = [
   { title: "Cicluri de Spălare Eco-friendly", description: "Consum optimizat de apă și energie pentru o curățenie verde." },
@@ -41,16 +42,7 @@ const Hero = () => {
           <div className="pt-12 mx-auto lg:max-w-7xl">
             <dl className="grid grid-cols-1 gap-6 space-y-0 text-center lg:gap-24 lg:grid-cols-3 lg:text-left">
               {features.map((feature, index) => (
-                <div key={index}>
-                  <div>
-                    <p className="mt-5 text-lg font-medium leading-6 text-black">
-                      {feature.title}
-                    </p>
-                  </div>
-                  <div className="mt-2 text-base text-gray-500">
-                    {feature.description}
-                  </div>
-                </div>
+                <HeroFeatures key={index} feature={feature} />
               ))}
             </dl>
           </div>
