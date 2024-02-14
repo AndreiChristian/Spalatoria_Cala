@@ -1,6 +1,7 @@
 import Heading from '@/components/Heading';
 import Image from 'next/image';
 import React from 'react';
+import Service from './Service';
 
 
 const features = [
@@ -32,19 +33,7 @@ const FeaturesSection = () => {
             <div>
               <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:space-y-0">
                 {features.map((feature, index) => (
-                  <div key={index}>
-                    <div>
-                      <div className="flex items-center justify-center w-12 h-12 text-black bg-gray-100 rounded-xl">
-                        <Image src="/images/cala.png" alt='cala' width={50} height={50} />
-                      </div>
-                      <p className="mt-4 text-lg font-medium leading-6 text-black">
-                        {feature.title}
-                      </p>
-                    </div>
-                    <div className="mt-4 text-base text-gray-500">
-                      {feature.description}
-                    </div>
-                  </div>
+                  <Service key={index} feature={feature} />
                 ))}
               </div>
             </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky backdrop-blur-[100px] z-30 top-0 p-2 md:p-0 dark:bg-black w-full max-w-full box-border border-b">
+      <div className="sticky bg-white drop-shadow-sm z-30 top-0 p-2 md:p-0 dark:bg-black w-full max-w-full box-border ">
         <div className="bg-transparent relative flex flex-col w-full px-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div className="bg-transparent flex flex-row items-center justify-between lg:justify-start">
             <Logo />
