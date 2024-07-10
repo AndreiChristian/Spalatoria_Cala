@@ -4,6 +4,6 @@ import PartnerLogos from "@/components/landingPage/PartnerLogos";
 export default function Page() {
   return <section>
     <Hero />
-    <PartnerLogos />
+    {1 < 0 ? <PartnerLogos /> : <></>}
   </section>
 }
