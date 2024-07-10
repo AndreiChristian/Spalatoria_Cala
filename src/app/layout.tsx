@@ -3,6 +3,7 @@ import { Lora } from "next/font/google";
 import "./globals.css";
 import ThemeWrapper from "./theme/themeWrapper";
 import Footer from "./layout/Footer";
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "./layout/Navigation/Navigation";
 
 const lora = Lora({ subsets: ["latin"] })
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow bg-white dark:bg-black " >
             {children}
+            <Analytics />
           </main>
           <Footer />
         </ThemeWrapper>
