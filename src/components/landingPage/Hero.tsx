@@ -12,11 +12,11 @@ const Hero = () => {
     <section>
       <div className="relative items-center w-full px-5 py-5 lg:py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="relative flex-col items-start m-auto align-middle">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+          <div className="grid grid-cols-1 gap-6">
             <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
               <div className="max-w-xl text-center lg:text-left">
                 <div>
-                  <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                  <p className="text-6xl font-medium tracking-tight text-black">
                     Spalatoria Cala
                   </p>
                   <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
@@ -32,9 +32,6 @@ const Hero = () => {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <img className="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto" alt="hero" src="https://cdni.itgalaxy.ro/images/products/img_202207200517/514789/normal/masina-de-spalat-rufe-albalux-axw1060-capacitate-6kg-clasa-e-1000rpm-alb-1290498.jpeg" />
             </div>
           </div>
         </div>
