@@ -28,7 +28,6 @@ export default function Drawer({ isDrawerOpen, closeDrawer, setIsDrawerOpen }: P
         </Link>
         <MobileLink closeDrawer={closeDrawer} href='/' text='Acasa' />
         <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/servicii' text='Servicii' />
-        <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/galerie' text='Galerie' />
         <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/preturi' text='Preturi' />
         <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/contact' text='Contact' />
         <MobileLink closeDrawer={() => setIsDrawerOpen(false)} href='/faq' text='Intrebari frecvente' />

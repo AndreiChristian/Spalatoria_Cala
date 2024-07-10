@@ -4,26 +4,16 @@ import React from 'react';
 // Define pricing options
 const pricingOptions = [
   {
-    title: "Demos",
-    description: "Suitable to grow steadily.",
-    price: "$15",
-    pricePeriod: "/mo",
+    title: "Spalare articole textile",
+    description: "Preluare, spalare, calcare si livrare articole textile.",
+    price: "5 lei plus TVA",
+    pricePeriod: "/kg",
     backgroundColor: "bg-gray-100", // Background color for the card
     textColor: "text-black", // Text color for the card
   },
   {
-    title: "Starter",
-    description: "Suitable to grow steadily.",
-    price: "$25",
-    pricePeriod: "/mo",
-    backgroundColor: "bg-gray-100",
-    textColor: "text-black",
-  },
-  {
-    title: "Corporate",
-    description: "Grow steadily and pizza.",
-    price: "$35",
-    pricePeriod: "/mo",
+    title: "O cerere speciala sau o cantitate mare",
+    description: "Preturi negociabile",
     backgroundColor: "bg-black",
     textColor: "text-white",
   },
@@ -32,7 +22,10 @@ const pricingOptions = [
 export default function PricingSection() {
   return (
     <section aria-labelledby="pricing-two" id="pricing-two" className="">
-      <Heading />
+      <Heading
+        title='Preturi'
+        paragraph='Pentru mai multe detalii, va rugam sa ne contactati'
+      />
       <div className="relative items-center w-full px-8 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="mx-auto space-y-4 lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0">
           {pricingOptions.map((option, index) => (

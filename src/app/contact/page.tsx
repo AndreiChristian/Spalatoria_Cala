@@ -12,7 +12,7 @@ const pricingOptions = [
   },
   {
     title: "Email",
-    price: "spalatoria_cala@gmail.com",
+    price: "prodcomdrobeta2022@yahoo.com",
     backgroundColor: "bg-gray-100",
     textColor: "text-black",
   },
@@ -48,8 +48,8 @@ export default function Page() {
                 <h2 className={`text-lg font-medium tracking-tighter ${option.textColor} lg:text-3xl`}>
                   {option.title}
                 </h2>
-                <div className="mt-6">
-                  <span className={`text-2xl font-light tracking-tight ${option.textColor}`}>
+                <div className="mt-6 text-wrap">
+                  <span className={`overflow-x-clip text-xl font-light tracking-tight ${option.textColor}`}>
                     {option.price}
                   </span>
                 </div>

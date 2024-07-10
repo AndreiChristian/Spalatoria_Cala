@@ -41,7 +41,6 @@ function DesktopNavigation() {
     <nav className="hidden md:flex md:flex-row items-center gap-2">
       <DesktopLink href='/' text='Acasa' />
       <DesktopLink href='/servicii' text='Servicii' />
-      <DesktopLink href='/galerie' text='Galerie' />
       <DesktopLink href='/preturi' text='Preturi' />
       <DesktopLink href='/contact' text='Contact' />
       <DesktopLink href='/faq' text='Intrebari frecvente' />
