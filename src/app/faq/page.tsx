@@ -36,7 +36,7 @@ export default function Page() {
   return (
     <section>
       <Heading
-        title="Întrebări Frecvente (FAQ)"
+        title="Întrebări Frecvente"
         paragraph="Aici veți găsi răspunsuri la cele mai comune întrebări legate de serviciile noastre de spălătorie industrială. Scopul nostru este să vă oferim informațiile necesare pentru a vă asigura că experiența dumneavoastră cu noi este cât mai plăcută și fără griji."
       />
       <div className="items-center w-full max-w-3xl px-5 py-5 mx-auto md:px-12 lg:px-16 lg:py-20">
