@@ -1,4 +1,5 @@
 import Heading from "@/components/Heading";
+import constants from "@/constants/constants";
 
 const title = 'Despre noi'
 
@@ -6,7 +7,7 @@ const title = 'Despre noi'
 const pricingOptions = [
   {
     title: "Telefon",
-    price: "0722576199",
+    price: constants.phoneNumber,
     backgroundColor: "bg-gray-100", // Background color for the card
     textColor: "text-black", // Text color for the card
   },
